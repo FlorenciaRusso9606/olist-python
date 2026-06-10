@@ -1,0 +1,17 @@
+[project]
+name = "olist-etl"
+version = "0.1.0"
+requires-python = ">=3.11"
+
+dependencies = [
+    "pandas>=2.2",        # manipulación de datos en memoria
+    "psycopg2-binary",    # driver para conectarse a PostgreSQL
+    "sqlalchemy>=2.0",    # ORM / query builder 
+    "python-dotenv",      # leer variables de entorno desde .env
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",             # tests
+    "pytest-cov",         # cobertura de tests
+]
